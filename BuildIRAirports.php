@@ -93,8 +93,8 @@ class BuildIRAirports
     public function __construct()
     {
         set_time_limit(-1);
-        $this->export_path = __DIR__."/src/AirportsArray.php";
-        $this->airportJsonURL = "https://datahub.io/core/airport-codes/r/airport-codes.json";
+        $this->export_path = __DIR__.'/src/AirportsArray.php';
+        $this->airportJsonURL = 'https://datahub.io/core/airport-codes/r/airport-codes.json';
 
         $export = $this->buildExportString($this->buildAirportArray());
         $this->writeExport($export);
