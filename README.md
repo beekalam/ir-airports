@@ -1,11 +1,11 @@
-# Very short description of the package
+# Getting Airport data from IATA code for Iran Airports.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/beekalam/ir-airports.svg?style=flat-square)](https://packagist.org/packages/beekalam/ir-airports)
 [![Build Status](https://travis-ci.com/beekalam/ir-airports.svg?branch=main)](https://travis-ci.com/beekalam/ir-airports)
 [![Quality Score](https://img.shields.io/scrutinizer/g/beekalam/ir-airports.svg?style=flat-square)](https://scrutinizer-ci.com/g/beekalam/ir-airports)
 [![Total Downloads](https://img.shields.io/packagist/dt/beekalam/ir-airports.svg?style=flat-square)](https://packagist.org/packages/beekalam/ir-airports)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+A simple class to get Airport data using IATA code for Iran Airports.
 
 ## Installation
 
