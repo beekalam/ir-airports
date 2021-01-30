@@ -1,7 +1,7 @@
 # Changelog
 
-All notable changes to `ir-airports` will be documented in this file
 
-## 1.0.0 - 201X-XX-XX
+
+## 1.0.0 - 2021-01-30
 
 - initial release
