@@ -1,7 +1,7 @@
 # Very short description of the package
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/beekalam/ir-airports.svg?style=flat-square)](https://packagist.org/packages/beekalam/ir-airports)
-[![Build Status](https://img.shields.io/travis/beekalam/ir-airports/master.svg?style=flat-square)](https://travis-ci.org/beekalam/ir-airports)
+[![Build Status](https://travis-ci.com/beekalam/ir-airports.svg?branch=main)](https://travis-ci.com/beekalam/ir-airports)
 [![Quality Score](https://img.shields.io/scrutinizer/g/beekalam/ir-airports.svg?style=flat-square)](https://scrutinizer-ci.com/g/beekalam/ir-airports)
 [![Total Downloads](https://img.shields.io/packagist/dt/beekalam/ir-airports.svg?style=flat-square)](https://packagist.org/packages/beekalam/ir-airports)
 
