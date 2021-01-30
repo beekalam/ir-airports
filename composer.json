@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Beekalam\\IrAirports\\": "src"
+            "Beekalam\\IRAirports\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Beekalam\\IrAirports\\Tests\\": "tests"
+            "Beekalam\\IRAirports\\Tests\\": "tests"
         }
     },
     "scripts": {

@@ -14,10 +14,11 @@ class BuildIRAirports
     public function __construct()
     {
         set_time_limit(-1);
-        $this->export_path = __DIR__."/IRAirports/airportdata.php";
+        $this->export_path = __DIR__."/src/AirportsArray.php";
         $this->airportJsonURL = "https://datahub.io/core/airport-codes/r/airport-codes.json";
 
         $export = $this->buildExportString($this->buildAirportArray());
+        var_dump($export);
         $this->writeExport($export);
     }
 
@@ -37,13 +38,26 @@ class BuildIRAirports
 
     public function buildExportString($export)
     {
-        return "<?php".PHP_EOL."return ".var_export($export, true).";";
+        //return "<?php".PHP_EOL."return ".var_export($export, true).";";
+        $template = <<<TEMPLATE
+<?php
+namespace Beekalam\IRAirports;
+
+class AirportsArray {
+    public static function IRAirportsArray() {
+        return %s;
+    }
+}
+TEMPLATE;
+
+        return sprintf($template, var_export($export, true));
     }
 
     public function writeExport($content)
     {
         file_put_contents($this->export_path, $content);
     }
+
 }
 
 new BuildIRAirports();
