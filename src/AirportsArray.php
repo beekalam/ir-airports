@@ -18,21 +18,7 @@ class AirportsArray {
     'municipality' => 'Khaneh',
     'name' => 'Khaneh Airport',
     'type' => 'small_airport',
-  ),
-  '' => 
-  array (
-    'continent' => 'AS',
-    'coordinates' => '53.417301178, 33.0890007019',
-    'elevation_ft' => '3550',
-    'gps_code' => NULL,
-    'iata_code' => NULL,
-    'ident' => 'US-OI05',
-    'iso_country' => 'IR',
-    'iso_region' => 'IR-04',
-    'local_code' => NULL,
-    'municipality' => NULL,
-    'name' => 'Nain Military Airport',
-    'type' => 'small_airport',
+    'fa_name' => 'خانه',
   ),
   'GSM' => 
   array (
@@ -48,6 +34,7 @@ class AirportsArray {
     'municipality' => 'Qeshm',
     'name' => 'Qeshm International Airport',
     'type' => 'small_airport',
+    'fa_name' => 'قشم',
   ),
   'IAQ' => 
   array (
@@ -63,6 +50,7 @@ class AirportsArray {
     'municipality' => NULL,
     'name' => 'Bahregan Airport',
     'type' => 'small_airport',
+    'fa_name' => 'بهرگان',
   ),
   'ABD' => 
   array (
@@ -78,6 +66,7 @@ class AirportsArray {
     'municipality' => 'Abadan',
     'name' => 'Abadan Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'آبادان',
   ),
   'DEF' => 
   array (
@@ -93,6 +82,7 @@ class AirportsArray {
     'municipality' => NULL,
     'name' => 'Dezful Airport',
     'type' => 'small_airport',
+    'fa_name' => 'دزفول',
   ),
   'AKW' => 
   array (
@@ -108,6 +98,7 @@ class AirportsArray {
     'municipality' => 'Aghajari',
     'name' => 'Aghajari Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'آقاجاری',
   ),
   'GCH' => 
   array (
@@ -123,6 +114,7 @@ class AirportsArray {
     'municipality' => 'Gachsaran',
     'name' => 'Gachsaran Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'گچساران',
   ),
   'OMI' => 
   array (
@@ -138,6 +130,7 @@ class AirportsArray {
     'municipality' => 'Omidiyeh',
     'name' => 'Omidiyeh Airport',
     'type' => 'small_airport',
+    'fa_name' => 'امیدیه',
   ),
   'MRX' => 
   array (
@@ -153,6 +146,7 @@ class AirportsArray {
     'municipality' => NULL,
     'name' => 'Mahshahr Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'ماهشهر',
   ),
   'AWZ' => 
   array (
@@ -168,6 +162,7 @@ class AirportsArray {
     'municipality' => 'Ahwaz',
     'name' => 'Ahwaz Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'اهواز',
   ),
   'AEU' => 
   array (
@@ -183,6 +178,7 @@ class AirportsArray {
     'municipality' => 'Abu Musa',
     'name' => 'Abu Musa Island Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'ابوموسی',
   ),
   'BUZ' => 
   array (
@@ -198,6 +194,7 @@ class AirportsArray {
     'municipality' => 'Bushehr',
     'name' => 'Bushehr Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'بوشهر',
   ),
   'YEH' => 
   array (
@@ -213,6 +210,7 @@ class AirportsArray {
     'municipality' => 'Asaloyeh',
     'name' => 'Asaloyeh Airport',
     'type' => 'closed',
+    'fa_name' => 'عسلویه',
   ),
   'KNR' => 
   array (
@@ -228,6 +226,7 @@ class AirportsArray {
     'municipality' => 'Kangan',
     'name' => 'Jam Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'کنگان',
   ),
   'KIH' => 
   array (
@@ -243,6 +242,7 @@ class AirportsArray {
     'municipality' => 'Kish Island',
     'name' => 'Kish International Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'کیش',
   ),
   'BDH' => 
   array (
@@ -258,6 +258,7 @@ class AirportsArray {
     'municipality' => 'Bandar Lengeh',
     'name' => 'Bandar Lengeh Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'بندر لنگه',
   ),
   'PGU' => 
   array (
@@ -273,6 +274,7 @@ class AirportsArray {
     'municipality' => 'Asalouyeh',
     'name' => 'Persian Gulf International Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'عسلویه',
   ),
   'KHK' => 
   array (
@@ -288,6 +290,7 @@ class AirportsArray {
     'municipality' => NULL,
     'name' => 'Khark Island Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'خارک',
   ),
   'SXI' => 
   array (
@@ -303,6 +306,7 @@ class AirportsArray {
     'municipality' => NULL,
     'name' => 'Sirri Island Airport',
     'type' => 'medium_airport',
+    'fa_name' => '',
   ),
   'LVP' => 
   array (
@@ -318,6 +322,7 @@ class AirportsArray {
     'municipality' => NULL,
     'name' => 'Lavan Island Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'لاوان',
   ),
   'KSH' => 
   array (
@@ -333,6 +338,7 @@ class AirportsArray {
     'municipality' => 'Kermanshah',
     'name' => 'Shahid Ashrafi Esfahani Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'کرمانشاه',
   ),
   'IIL' => 
   array (
@@ -348,6 +354,7 @@ class AirportsArray {
     'municipality' => 'Ilam',
     'name' => 'Ilam Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'ایلام',
   ),
   'KHD' => 
   array (
@@ -363,6 +370,7 @@ class AirportsArray {
     'municipality' => NULL,
     'name' => 'Khoram Abad Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'خرم آباد',
   ),
   'SDG' => 
   array (
@@ -378,6 +386,7 @@ class AirportsArray {
     'municipality' => NULL,
     'name' => 'Sanandaj Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'سنندج',
   ),
   'IFH' => 
   array (
@@ -393,6 +402,7 @@ class AirportsArray {
     'municipality' => 'Hesa',
     'name' => 'Hesa Airport',
     'type' => 'small_airport',
+    'fa_name' => '',
   ),
   'KKS' => 
   array (
@@ -408,6 +418,7 @@ class AirportsArray {
     'municipality' => 'Kashan',
     'name' => 'Kashan Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'کاشان',
   ),
   'IFN' => 
   array (
@@ -423,6 +434,7 @@ class AirportsArray {
     'municipality' => 'Isfahan',
     'name' => 'Esfahan Shahid Beheshti International Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'اصفهان',
   ),
   'CQD' => 
   array (
@@ -438,6 +450,7 @@ class AirportsArray {
     'municipality' => 'Shahrekord',
     'name' => 'Shahrekord Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'شهرکرد',
   ),
   'RAS' => 
   array (
@@ -453,6 +466,7 @@ class AirportsArray {
     'municipality' => 'Rasht',
     'name' => 'Sardar-e-Jangal Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'رشت',
   ),
   'HDM' => 
   array (
@@ -468,6 +482,7 @@ class AirportsArray {
     'municipality' => 'Hamadan',
     'name' => 'Hamadan Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'همدان',
   ),
   'AJK' => 
   array (
@@ -483,6 +498,7 @@ class AirportsArray {
     'municipality' => 'Araak',
     'name' => 'Arak Airport',
     'type' => 'small_airport',
+    'fa_name' => 'اراک',
   ),
   'IKA' => 
   array (
@@ -498,6 +514,7 @@ class AirportsArray {
     'municipality' => 'Tehran',
     'name' => 'Imam Khomeini International Airport',
     'type' => 'large_airport',
+    'fa_name' => 'تهران',
   ),
   'THR' => 
   array (
@@ -513,6 +530,7 @@ class AirportsArray {
     'municipality' => 'Tehran',
     'name' => 'Mehrabad International Airport',
     'type' => 'large_airport',
+    'fa_name' => 'تهران',
   ),
   'GZW' => 
   array (
@@ -528,6 +546,7 @@ class AirportsArray {
     'municipality' => 'Qazvin',
     'name' => 'Qazvin Airport',
     'type' => 'medium_airport',
+    'fa_name' => '',
   ),
   'PYK' => 
   array (
@@ -543,6 +562,7 @@ class AirportsArray {
     'municipality' => 'Karaj',
     'name' => 'Payam International Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'کرج',
   ),
   'SNX' => 
   array (
@@ -558,6 +578,7 @@ class AirportsArray {
     'municipality' => 'Semnan',
     'name' => 'Semnan Municipal Airport',
     'type' => 'small_airport',
+    'fa_name' => 'سمنان',
   ),
   'BND' => 
   array (
@@ -573,6 +594,7 @@ class AirportsArray {
     'municipality' => 'Bandar Abbas',
     'name' => 'Bandar Abbas International Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'بندرعباس',
   ),
   'JYR' => 
   array (
@@ -588,6 +610,7 @@ class AirportsArray {
     'municipality' => 'Jiroft',
     'name' => 'Jiroft Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'جیرفت',
   ),
   'KER' => 
   array (
@@ -603,6 +626,7 @@ class AirportsArray {
     'municipality' => 'Kerman',
     'name' => 'Kerman Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'کرمان',
   ),
   'BXR' => 
   array (
@@ -618,6 +642,7 @@ class AirportsArray {
     'municipality' => NULL,
     'name' => 'Bam Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'بام',
   ),
   'HDR' => 
   array (
@@ -633,6 +658,7 @@ class AirportsArray {
     'municipality' => 'Havadarya',
     'name' => 'Havadarya Airport',
     'type' => 'small_airport',
+    'fa_name' => 'هوادریا',
   ),
   'RJN' => 
   array (
@@ -648,6 +674,7 @@ class AirportsArray {
     'municipality' => NULL,
     'name' => 'Rafsanjan Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'رفسنجان',
   ),
   'SYJ' => 
   array (
@@ -663,6 +690,7 @@ class AirportsArray {
     'municipality' => NULL,
     'name' => 'Sirjan Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'سیرجان',
   ),
   'XBJ' => 
   array (
@@ -678,6 +706,7 @@ class AirportsArray {
     'municipality' => 'Birjand',
     'name' => 'Birjand Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'بیرجند',
   ),
   'CKT' => 
   array (
@@ -693,6 +722,7 @@ class AirportsArray {
     'municipality' => 'Sarakhs',
     'name' => 'Sarakhs Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'سرخس',
   ),
   'RUD' => 
   array (
@@ -708,6 +738,7 @@ class AirportsArray {
     'municipality' => NULL,
     'name' => 'Shahroud Airport',
     'type' => 'small_airport',
+    'fa_name' => 'شاهرود',
   ),
   'MHD' => 
   array (
@@ -723,6 +754,7 @@ class AirportsArray {
     'municipality' => 'Mashhad',
     'name' => 'Mashhad International Airport',
     'type' => 'large_airport',
+    'fa_name' => 'مشهد',
   ),
   'BJB' => 
   array (
@@ -738,6 +770,7 @@ class AirportsArray {
     'municipality' => 'Bojnord',
     'name' => 'Bojnord Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'بجنورد',
   ),
   'AFZ' => 
   array (
@@ -753,6 +786,7 @@ class AirportsArray {
     'municipality' => 'Sabzevar',
     'name' => 'Sabzevar National Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'سبزوار',
   ),
   'TCX' => 
   array (
@@ -768,6 +802,7 @@ class AirportsArray {
     'municipality' => 'Tabas',
     'name' => 'Tabas Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'طبس',
   ),
   'KLM' => 
   array (
@@ -783,6 +818,7 @@ class AirportsArray {
     'municipality' => 'Kalaleh',
     'name' => 'Kalaleh Airport',
     'type' => 'small_airport',
+    'fa_name' => 'کلاله',
   ),
   'GBT' => 
   array (
@@ -798,6 +834,7 @@ class AirportsArray {
     'municipality' => 'Gorgan',
     'name' => 'Gorgan Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'گرگان',
   ),
   'BSM' => 
   array (
@@ -813,6 +850,7 @@ class AirportsArray {
     'municipality' => 'Amol',
     'name' => 'Bishe Kola Air Base',
     'type' => 'small_airport',
+    'fa_name' => 'آمل',
   ),
   'NSH' => 
   array (
@@ -828,6 +866,7 @@ class AirportsArray {
     'municipality' => NULL,
     'name' => 'Noshahr Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'نوشهر',
   ),
   'RZR' => 
   array (
@@ -843,6 +882,7 @@ class AirportsArray {
     'municipality' => NULL,
     'name' => 'Ramsar Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'رامسر',
   ),
   'SRY' => 
   array (
@@ -858,6 +898,7 @@ class AirportsArray {
     'municipality' => 'Sari',
     'name' => 'Dasht-e Naz Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'ساری',
   ),
   'FAZ' => 
   array (
@@ -873,6 +914,7 @@ class AirportsArray {
     'municipality' => 'Fasa',
     'name' => 'Fasa Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'فسا',
   ),
   'JAR' => 
   array (
@@ -888,6 +930,7 @@ class AirportsArray {
     'municipality' => 'Jahrom',
     'name' => 'Jahrom Airport',
     'type' => 'small_airport',
+    'fa_name' => 'جهرم',
   ),
   'LRR' => 
   array (
@@ -903,6 +946,7 @@ class AirportsArray {
     'municipality' => 'Lar',
     'name' => 'Lar Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'لار',
   ),
   'LFM' => 
   array (
@@ -918,6 +962,7 @@ class AirportsArray {
     'municipality' => 'Lamerd',
     'name' => 'Lamerd Airport',
     'type' => 'small_airport',
+    'fa_name' => 'لامرد',
   ),
   'SYZ' => 
   array (
@@ -933,6 +978,7 @@ class AirportsArray {
     'municipality' => 'Shiraz',
     'name' => 'Shiraz Shahid Dastghaib International Airport',
     'type' => 'large_airport',
+    'fa_name' => 'شیراز',
   ),
   'YES' => 
   array (
@@ -948,6 +994,7 @@ class AirportsArray {
     'municipality' => 'Yasouj',
     'name' => 'Yasouj Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'یاسوج',
   ),
   'KHY' => 
   array (
@@ -963,6 +1010,7 @@ class AirportsArray {
     'municipality' => 'Khoy',
     'name' => 'Khoy Airport',
     'type' => 'small_airport',
+    'fa_name' => 'خوی',
   ),
   'ADU' => 
   array (
@@ -978,6 +1026,7 @@ class AirportsArray {
     'municipality' => 'Ardabil',
     'name' => 'Ardabil Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'اردبیل',
   ),
   'ACP' => 
   array (
@@ -993,6 +1042,7 @@ class AirportsArray {
     'municipality' => 'Maragheh',
     'name' => 'Sahand Airport',
     'type' => 'small_airport',
+    'fa_name' => 'مراغه',
   ),
   'PFQ' => 
   array (
@@ -1008,6 +1058,7 @@ class AirportsArray {
     'municipality' => 'Parsabad',
     'name' => 'Parsabade Moghan Airport',
     'type' => 'small_airport',
+    'fa_name' => 'پارس آباد',
   ),
   'OMH' => 
   array (
@@ -1023,6 +1074,7 @@ class AirportsArray {
     'municipality' => 'Urmia',
     'name' => 'Urmia Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'ارومیه',
   ),
   'TBZ' => 
   array (
@@ -1038,6 +1090,7 @@ class AirportsArray {
     'municipality' => 'Tabriz',
     'name' => 'Tabriz International Airport',
     'type' => 'large_airport',
+    'fa_name' => 'تبریز',
   ),
   'IMQ' => 
   array (
@@ -1053,6 +1106,7 @@ class AirportsArray {
     'municipality' => 'Showt',
     'name' => 'Maku National Airport',
     'type' => 'small_airport',
+    'fa_name' => 'ماکو',
   ),
   'JWN' => 
   array (
@@ -1068,6 +1122,7 @@ class AirportsArray {
     'municipality' => 'Zanjan',
     'name' => 'Zanjan Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'زنجان',
   ),
   'AZD' => 
   array (
@@ -1083,6 +1138,7 @@ class AirportsArray {
     'municipality' => 'Yazd',
     'name' => 'Shahid Sadooghi Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'یزد',
   ),
   'ACZ' => 
   array (
@@ -1098,6 +1154,7 @@ class AirportsArray {
     'municipality' => NULL,
     'name' => 'Zabol Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'زابل',
   ),
   'ZBR' => 
   array (
@@ -1113,6 +1170,7 @@ class AirportsArray {
     'municipality' => 'Chabahar',
     'name' => 'Konarak Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'چابهار',
   ),
   'ZAH' => 
   array (
@@ -1128,6 +1186,7 @@ class AirportsArray {
     'municipality' => 'Zahedan',
     'name' => 'Zahedan International Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'زاهدان',
   ),
   'IHR' => 
   array (
@@ -1143,6 +1202,7 @@ class AirportsArray {
     'municipality' => 'Iranshahr',
     'name' => 'Iran Shahr Airport',
     'type' => 'medium_airport',
+    'fa_name' => 'ایرانشهر',
   ),
   'JSK' => 
   array (
@@ -1158,6 +1218,7 @@ class AirportsArray {
     'municipality' => 'Jask',
     'name' => 'Jask Airport',
     'type' => 'small_airport',
+    'fa_name' => 'جاسک',
   ),
 );
     }

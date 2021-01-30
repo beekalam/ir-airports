@@ -107,9 +107,11 @@ class BuildIRAirports
 
         $export = [];
         foreach ($airport_data as $row) {
-            if (in_array($row['iso_country'], $this->filterCountries)) {
-                $row['fa_name'] = $this->getPersianName($row['iata_code']);
-                $export[$row['iata_code']] = $row;
+            if ($row['iata_code']) {
+                if (in_array($row['iso_country'], $this->filterCountries)) {
+                    $row['fa_name'] = $this->getPersianName($row['iata_code']);
+                    $export[$row['iata_code']] = $row;
+                }
             }
         }
 
