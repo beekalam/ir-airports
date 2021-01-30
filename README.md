@@ -18,12 +18,15 @@ composer require beekalam/ir-airports
 ## Usage
 
 ``` php
-$airport = Airport::fromCode('SYZ');
-$airport->getType();
-$airport->getEnglishName();
-$airport->getPersianName();
-$airport->getCoordinates();
+require __DIR__. "/vendor/autoload.php";
 
+use Beekalam\IRAirports\IRAirport;
+
+$airport = IRAirport::fromCode('SYZ');
+echo $airport->getType(). PHP_EOL;
+echo $airport->getEnglishName() . PHP_EOL;
+echo $airport->getPersianName() . PHP_EOL;
+echo $airport->getCoordinates() . PHP_EOL;
 ```
 
 ### Testing
