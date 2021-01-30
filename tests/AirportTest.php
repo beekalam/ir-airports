@@ -25,4 +25,18 @@ class AirportTest extends TestCase
         $this->assertEquals('JSK', IRAirport::fromCode('JSK')->getCode());
     }
 
+    /** @test */
+    function it_accepts_array_values_in_constructor()
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        new IRAirport('string');
+    }
+
+    /** @test */
+    function it_can_create_an_airport_from_iata_code()
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        new IRAirport([]);
+    }
+
 }

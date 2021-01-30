@@ -2,6 +2,8 @@
 
 namespace Beekalam\IRAirports;
 
+use Webmozart\Assert\Assert;
+
 class IRAirport
 {
     /**
@@ -31,7 +33,9 @@ class IRAirport
 
     public function __construct($airport)
     {
-        //Assert::inArray('iata_code',$airport);
+        Assert::isArray($airport);
+        Assert::inArray('iata_code', $airport, 'iata_code not found.');
+
         $this->code = $airport['iata_code'];
         $this->coordinates = $airport['coordinates'];
         $this->municipality = $airport['municipality'];
@@ -48,6 +52,7 @@ class IRAirport
 
             return new self($airport);
         }
+        //throw new \InvalidArgumentException("Invalid Airport code.");
     }
 
     /**
