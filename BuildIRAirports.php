@@ -8,6 +8,46 @@ class BuildIRAirports
 
     private $filterCountries = ['IR'];
 
+    private $persianNames = [
+        'GSM' => 'قشم',
+        'IAQ' => 'بهرگان',
+        'RJN' => 'رفسنجان',
+        'SYJ' => 'سیرجان',
+        'XBJ' => 'بیرجند',
+        'CKT' => 'سرخس',
+        'RUD' => 'شاهرود',
+        'MHD' => 'مشهد',
+        'BJB' => 'بجنورد',
+        'AFZ' => 'سبزوار',
+        'TCX' => 'طبس',
+        'KLM' => 'کلاله',
+        'GBT' => 'گرگان',
+        'BSM' => 'آمل',
+        'NSH' => 'نوشهر',
+        'RZR' => 'رامسر',
+        'SRY' => 'ساری',
+        'FAZ' => 'فسا',
+        'JAR' => 'جهرم',
+        'LRR' => 'لار',
+        'LFM' => 'لامرد',
+        'SYZ' => 'شیراز',
+        'YES' => 'یاسوج',
+        'KHY' => 'خوی',
+        'ADU' => 'اردبیل',
+        'ACP' => 'مراغه',
+        'PFQ' => 'پارس آباد',
+        'OMH' => 'ارومیه',
+        'TBZ' => 'تبریز',
+        'IMQ' => 'ماکو',
+        'JWN' => 'زنجان',
+        'AZD' => 'یزد',
+        'ACZ' => 'زابل',
+        'ZBR' => 'چابهار',
+        'ZAH' => 'زاهدان',
+        'IHR' => 'ایرانشهر',
+        'JSK' => 'جاسک',
+    ];
+
     /**
      * BuildIRAirports constructor.
      */
@@ -58,6 +98,12 @@ TEMPLATE;
         file_put_contents($this->export_path, $content);
     }
 
+    public function getPersianName($en_name)
+    {
+        if (array_key_exists($en_name, $this->persianNames)) {
+            return $this->persianNames($en_name);
+        }
+    }
 }
 
 new BuildIRAirports();
