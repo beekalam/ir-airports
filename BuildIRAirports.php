@@ -9,8 +9,47 @@ class BuildIRAirports
     private $filterCountries = ['IR'];
 
     private $persianNames = [
+        'KHA' => 'خانه',
         'GSM' => 'قشم',
         'IAQ' => 'بهرگان',
+        'ABD' => 'آبادان',
+        'DEF' => 'دزفول',
+        'AKW' => 'آقاجاری',
+        'GCH' => 'گچساران',
+        'OMI' => 'امیدیه',
+        'MRX' => 'ماهشهر',
+        'AWZ' => 'اهواز',
+        'AEU' => 'ابوموسی',
+        'BUZ' => 'بوشهر',
+        'YEH' => 'عسلویه',
+        'KNR' => 'کنگان',
+        'KIH' => 'کیش',
+        'BDH' => 'بندر لنگه',
+        'PGU' => 'عسلویه',
+        'KHK' => 'خارک',
+        'SXI' => '',
+        'LVP' => 'لاوان',
+        'KSH' => 'کرمانشاه',
+        'IIL' => 'ایلام',
+        'KHD' => 'خرم آباد',
+        'SDG' => 'سنندج',
+        'IFH' => '',
+        'KKS' => 'کاشان',
+        'IFN' => 'اصفهان',
+        'CQD' => 'شهرکرد',
+        'RAS' => 'رشت',
+        'HDM' => 'همدان',
+        'AJK' => 'اراک',
+        'IKA' => 'تهران',
+        'THR' => 'تهران',
+        'GWZ' => 'قزوین',
+        'PYK' => 'کرج',
+        'SNX' => 'سمنان',
+        'BND' => 'بندرعباس',
+        'JYR' => 'جیرفت',
+        'KER' => 'کرمان',
+        'BXR' => 'بام',
+        'HDR' => 'هوادریا',
         'RJN' => 'رفسنجان',
         'SYJ' => 'سیرجان',
         'XBJ' => 'بیرجند',
@@ -69,6 +108,7 @@ class BuildIRAirports
         $export = [];
         foreach ($airport_data as $row) {
             if (in_array($row['iso_country'], $this->filterCountries)) {
+                $row['fa_name'] = $this->getPersianName($row['iata_code']);
                 $export[$row['iata_code']] = $row;
             }
         }
@@ -98,11 +138,13 @@ TEMPLATE;
         file_put_contents($this->export_path, $content);
     }
 
-    public function getPersianName($en_name)
+    public function getPersianName($iata_code)
     {
-        if (array_key_exists($en_name, $this->persianNames)) {
-            return $this->persianNames($en_name);
+        if (array_key_exists($iata_code, $this->persianNames)) {
+            return $this->persianNames[$iata_code];
         }
+
+        return '';
     }
 }
 
