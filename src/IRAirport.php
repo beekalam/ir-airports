@@ -36,6 +36,11 @@ class IRAirport
      */
     private $persianName;
 
+    /**
+     * IRAirport constructor.
+     *
+     * @param $airport
+     */
     public function __construct($airport)
     {
         Assert::isArray($airport);
@@ -50,6 +55,10 @@ class IRAirport
         $this->persianName = $airport['fa_name'];
     }
 
+    /**
+     * @param $code
+     * @return \Beekalam\IRAirports\IRAirport
+     */
     public static function fromCode($code)
     {
         $airports = AirportsArray::IRAirportsArray();
