@@ -1,15 +1,28 @@
 <?php
 
-namespace Beekalam\IrAirports\Tests;
+namespace Beekalam\IRAirports\Tests;
 
-use Beekalam\IrAirports\IRAirport;
+use Beekalam\IRAirports\IRAirport;
 use PHPUnit\Framework\TestCase;
 
 class AirportTest extends TestCase
 {
     /** @test */
-    public function true_is_true()
+    public function can_make_an_airport()
     {
-        $this->assertNotNull(new IRAirport());
+        $this->assertEquals('JSK', IRAirport::fromCode('JSK')->getCode());
     }
+
+    /** @test */
+    function can_create_airport_from_code()
+    {
+        $this->assertEquals('JSK', IRAirport::fromCode('JSK')->getCode());
+    }
+
+    /** @test */
+    function can_get_airport_name()
+    {
+        $this->assertEquals('JSK', IRAirport::fromCode('JSK')->getCode());
+    }
+
 }

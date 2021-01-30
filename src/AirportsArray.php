@@ -1,5 +1,9 @@
 <?php
-return array (
+namespace Beekalam\IRAirports;
+
+class AirportsArray {
+    public static function IRAirportsArray() {
+        return array (
   'KHA' => 
   array (
     'continent' => 'AS',
@@ -1156,3 +1160,5 @@ return array (
     'type' => 'small_airport',
   ),
 );
+    }
+}
