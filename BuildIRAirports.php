@@ -97,7 +97,6 @@ class BuildIRAirports
         $this->airportJsonURL = "https://datahub.io/core/airport-codes/r/airport-codes.json";
 
         $export = $this->buildExportString($this->buildAirportArray());
-        var_dump($export);
         $this->writeExport($export);
     }
 

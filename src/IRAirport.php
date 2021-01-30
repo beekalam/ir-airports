@@ -31,10 +31,15 @@ class IRAirport
      */
     private $municipality;
 
+    /**
+     * @var
+     */
+    private $persianName;
+
     public function __construct($airport)
     {
         Assert::isArray($airport);
-        Assert::inArray('iata_code', $airport, 'iata_code not found.');
+        Assert::inArray('iata_code', array_keys($airport), 'iata_code not found.');
 
         $this->code = $airport['iata_code'];
         $this->coordinates = $airport['coordinates'];
@@ -42,6 +47,7 @@ class IRAirport
         $this->name = $airport['name'];
         $this->englishName = $this->name;
         $this->type = $airport['type'];
+        $this->persianName = $airport['fa_name'];
     }
 
     public static function fromCode($code)
@@ -137,5 +143,21 @@ class IRAirport
         $this->municipality = $municipality;
 
         return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPersianName()
+    {
+        return $this->persianName;
+    }
+
+    /**
+     * @param mixed $persianName
+     */
+    public function setPersianName($persianName): void
+    {
+        $this->persianName = $persianName;
     }
 }

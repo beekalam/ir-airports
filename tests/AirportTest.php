@@ -10,6 +10,7 @@ class AirportTest extends TestCase
     /** @test */
     public function can_make_an_airport()
     {
+
         $this->assertEquals('JSK', IRAirport::fromCode('JSK')->getCode());
     }
 
@@ -23,6 +24,12 @@ class AirportTest extends TestCase
     function can_get_airport_name()
     {
         $this->assertEquals('JSK', IRAirport::fromCode('JSK')->getCode());
+    }
+
+    /** @test */
+    function it_should_give_persian_name()
+    {
+        $this->assertNotEmpty('JSK', IRAirport::fromCode('JSK')->getPersianName());
     }
 
     /** @test */
