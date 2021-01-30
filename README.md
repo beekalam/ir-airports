@@ -18,7 +18,12 @@ composer require beekalam/ir-airports
 ## Usage
 
 ``` php
-// Usage description here
+$airport = Airport::fromCode('SYZ');
+$airport->getType();
+$airport->getEnglishName();
+$airport->getPersianName();
+$airport->getCoordinates();
+
 ```
 
 ### Testing
