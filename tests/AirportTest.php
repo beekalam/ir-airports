@@ -39,4 +39,10 @@ class AirportTest extends TestCase
         new IRAirport([]);
     }
 
+    /** @test */
+    function it_can_not_create_airport_from_invalid_iata_code()
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        IRAirport::fromCode('not valid airport code')->getCode();
+    }
 }

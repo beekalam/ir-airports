@@ -52,7 +52,7 @@ class IRAirport
 
             return new self($airport);
         }
-        //throw new \InvalidArgumentException("Invalid Airport code.");
+        throw new \InvalidArgumentException("Invalid Airport code.");
     }
 
     /**
