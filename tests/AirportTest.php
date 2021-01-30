@@ -33,6 +33,12 @@ class AirportTest extends TestCase
     }
 
     /** @test */
+    function it_can_give_type_of_airport()
+    {
+        $this->assertNotEmpty('small_airport', IRAirport::fromCode('JSK')->getType());
+    }
+
+    /** @test */
     function it_accepts_array_values_in_constructor()
     {
         $this->expectException(\InvalidArgumentException::class);
