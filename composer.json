@@ -1,0 +1,42 @@
+{
+    "name": "beekalam/ir-airports",
+    "description": "A package for Iran Airport Data",
+    "keywords": [
+        "beekalam",
+        "ir-airports"
+    ],
+    "homepage": "https://github.com/beekalam/ir-airports",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mohammadreza Mansouri",
+            "email": "beekalam@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Beekalam\\IrAirports\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Beekalam\\IrAirports\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
