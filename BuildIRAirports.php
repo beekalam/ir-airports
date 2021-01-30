@@ -27,7 +27,7 @@ class BuildIRAirports
 
         $export = [];
         foreach ($airport_data as $row) {
-            if ($row['iata_code'] && in_array($row['iata_code'], $this->filterCountries)) {
+            if (in_array($row['iso_country'], $this->filterCountries)) {
                 $export[$row['iata_code']] = $row;
             }
         }
@@ -37,7 +37,7 @@ class BuildIRAirports
 
     public function buildExportString($export)
     {
-        return "<?php".PHP_EOL.var_export($export, true).";";
+        return "<?php".PHP_EOL."return ".var_export($export, true).";";
     }
 
     public function writeExport($content)
